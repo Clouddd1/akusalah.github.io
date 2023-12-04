@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aku Minta Maaf</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+        }
+        #apology-container {
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        h1 {
+            color: #f05454; /* Romantic red color */
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #f05454;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #d84343;
+        }
+        #forgiveness-message {
+            display: none;
+            color: #4caf50; /* Positive green color */
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="apology-container">
+        <h1>Aku Minta Maaf</h1>
+        <p>Teruntuk Kelly, aku minta maaf dengan segenap hatiku. Aku menyesal jika perbuatanku telah menyakitimu. Aku benar-benar menyesal dan berjanji dengan tulus untuk memperbaiki kesalahan ini. Kamu adalah bintang dalam hidupku.</p>
+        <button onclick="showForgiveness()">Maafin Ya</button>
+        <p id="forgiveness-message">Makasih udah dimaafin, aku sayang kamu ❤️</p>
+    </div>
+
+    <script>
+        function showForgiveness() {
+            document.getElementById('forgiveness-message').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
