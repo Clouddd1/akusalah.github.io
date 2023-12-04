@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="styles.css">
     <title>Maaf</title>
 </head>
@@ -10,12 +10,15 @@
     <div class="container">
         <h1>Teruntuk Kelly yang kusayang,</h1>
         <p class="apology-message">Aku disini Awn meminta maaf untuk apa yang kulakukan. Aku berjanji akan berubah lebih baik.</p>
-        <label for="maafOption">Apakah aku dapat dimaafkan?</label>
-        <select id="maafOption">
-            <option value="ya">Ya</option>
-            <option value="tidak">Tidak</option>
-        </select>
-        <audio id="myAudio" controls autoplay>
+        <div class="button-container">
+            <button id="yaButton">Ya</button>
+            <button id="tidakButton">Tidak</button>
+        </div>
+        <div class="response-container" style="display: none;">
+            <p id="yaResponse">Terima kasih sudah memaafkanku. Aku sayang kamu ❤️</p>
+            <p id="tidakResponse">Gapapa, aku akan berusaha lebih baik. Aku sayang kamu ❤️</p>
+        </div>
+        <audio id="myAudio" loop>
             <!-- Gantilah 'music/heri.mp3' dengan path yang sesuai ke file musik Anda -->
             <source src="music/heri.mp3" type="audio/mp3">
             Your browser does not support the audio element.
