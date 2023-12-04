@@ -17,17 +17,22 @@ body {
     margin-top: 10px;
 }
 
-label {
-    margin-top: 10px;
-    display: block;
+.button-container {
+    margin-top: 20px;
 }
 
-select {
-    margin-top: 5px;
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1em;
+    cursor: pointer;
 }
 
 /* Sembunyikan kontrol audio */
 audio {
-    margin-top: 20px;
     display: none;
+}
+
+.response-container {
+    margin-top: 20px;
 }
