@@ -2,28 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="styles.css">
-    <title>Maaf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aku Minta Maaf</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #d2b48c; /* Tan color */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333; /* Dark text color */
+        }
+        #apology-container {
+            max-width: 800px;
+            padding: 40px;
+            border: 2px solid #333;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(51, 51, 51, 0.3);
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+        }
+        h1 {
+            color: #f05454; /* Romantic red color */
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #f05454;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #d84343;
+        }
+        #forgiveness-message {
+            display: none;
+            color: #4caf50; /* Positive green color */
+            font-weight: bold;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        /* Hide default audio controls */
+        #background-music {
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Teruntuk Kelly yang kusayang,</h1>
-        <p class="apology-message">Aku disini Awn meminta maaf untuk apa yang kulakukan. Aku berjanji akan berubah lebih baik.</p>
-        <div class="button-container">
-            <button id="yaButton">Ya</button>
-            <button id="tidakButton">Tidak</button>
-        </div>
-        <div class="response-container" style="display: none;">
-            <p id="yaResponse">Terima kasih sudah memaafkanku. Aku sayang kamu ❤️</p>
-            <p id="tidakResponse">Gapapa, aku akan berusaha lebih baik. Aku sayang kamu ❤️</p>
-        </div>
-        <audio id="myAudio" loop>
-            <!-- Gantilah 'music/heri.mp3' dengan path yang sesuai ke file musik Anda -->
-            <source src="music/heri.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
+
+    <div id="apology-container">
+        <h1>Aku Minta Maaf</h1>
+        <p>Teruntuk Kelly, aku ingin menyampaikan permintaan maafku yang mendalam. Aku menyesal atas perbuatanku yang mungkin telah menyakitimu. Aku bener-bener menyesal dan berjanji dengan tulus untuk memperbaiki kesalahan ini. Kamu adalah bintang dalam hidupku.</p>
+        <!-- Audio element with autoplay -->
+        <audio id="background-music" autoplay loop>
+            <source src="music/heri.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
         </audio>
+        <!-- Play button -->
+        <button onclick="showForgiveness()">Maafin Ya</button>
+        <p id="forgiveness-message">Makasih udah dimaafin, aku sayang kamu ❤️</p>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        function showForgiveness() {
+            document.getElementById('forgiveness-message').style.display = 'block';
+        }
+    </script>
+
 </body>
 </html>
