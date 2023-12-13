@@ -29,10 +29,10 @@ button {
 }
 
 /* Sembunyikan kontrol audio */
-audio {
-    display: none;
-}
+.song{
+    visibility: hidden;
 
+}
 .response-container {
     margin-top: 20px;
 }
